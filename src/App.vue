@@ -1,48 +1,93 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/querying">Querying</router-link> |
-      <router-link to="/traversal">Traversal</router-link> |
-      <router-link to="/actions">Actions</router-link> |
-      <router-link to="/window">Window</router-link> |
-      <router-link to="/viewport">Viewport</router-link> |
-      <router-link to="/location">Location</router-link> |
-      <router-link to="/navigation">Navigation</router-link> |
-      <router-link to="/assertions">Assertions</router-link> |
-      <router-link to="/misc">Misc</router-link> |
-      <router-link to="/connectors">Connectors</router-link> |
-      <router-link to="/aliasing">Aliasing</router-link> |
-      <router-link to="/waiting">Waiting</router-link> |
-      <router-link to="/network-requests">Network Requests</router-link> |
-      <router-link to="/files">Files</router-link> |
-      <router-link to="/local-storage">Local Storage</router-link> |
-      <router-link to="/cookies">Cookies</router-link> |
-      <router-link to="/spies-stubs-clocks">Spies, Stubs & Clocks</router-link>
-    </div>
+    <nav class="main-nav">
+      <div class="logo">Test cases</div>
+      <Burger></Burger>
+    </nav>
+
+    <Sidebar>
+      <ul class="sidebar-panel-nav">
+        <router-link to="/">Home</router-link>
+        <router-link to="/querying">Querying</router-link>
+        <router-link to="/actions">Actions</router-link>
+        <router-link to="/window">Window</router-link>
+        <router-link to="/viewport">Viewport</router-link>
+        <router-link to="/location">Location</router-link>
+        <router-link to="/navigation">Navigation</router-link>
+        <router-link to="/assertions">Assertions</router-link>
+        <router-link to="/misc">Misc</router-link>
+        <router-link to="/connectors">Connectors</router-link>
+        <router-link to="/aliasing">Aliasing</router-link>
+        <router-link to="/waiting">Waiting</router-link>
+        <router-link to="/network-requests">Network Requests</router-link>
+        <router-link to="/files">Files</router-link>
+        <router-link to="/local-storage">Local Storage</router-link>
+        <router-link to="/cookies">Cookies</router-link>
+        <router-link to="/spies-stubs-clocks"
+          >Spies, Stubs & Clocks</router-link
+        >
+      </ul>
+    </Sidebar>
     <router-view />
   </div>
 </template>
 
+<script>
+import Burger from "./components/Menu/Burger.vue";
+import Sidebar from "./components/Menu/Sidebar.vue";
+
+export default {
+  name: "app",
+  components: {
+    Burger,
+    Sidebar
+  }
+};
+</script>
+
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+html {
+  height: 100%;
+  overflow: hidden;
 }
 
-#nav {
-  padding: 30px;
+body {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato";
+  height: 100%;
+  background: rgb(101, 31, 87);
+  background: linear-gradient(
+    45deg,
+    rgba(101, 31, 87, 1) 0%,
+    rgba(225, 113, 87, 1) 48%,
+    rgba(249, 248, 113, 1) 100%
+  );
+}
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+.logo {
+  align-self: center;
+  color: #fff;
+  font-weight: bold;
+  font-family: "Lato";
+}
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0.8rem;
+}
+
+ul.sidebar-panel-nav {
+  list-style-type: none;
+}
+
+ul.sidebar-panel-nav > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  display: block;
+  padding-bottom: 0.5em;
 }
 </style>
