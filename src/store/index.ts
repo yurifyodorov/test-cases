@@ -10,6 +10,8 @@ export default new Vuex.Store({
   modules: {}
 });
 
+// FIXME: есть сомнения насчет правильности,
+// когда выше уже объявляется new Vuex.Store
 export const store = Vue.observable({
   isNavOpen: false
 });
