@@ -1,10 +1,10 @@
-import { PageType, ExamplePage } from '../types';
+import { Category, ExamplePage } from '../types';
 
 const url = '/data/pages.json';
 
 class PagesService {
 
-  getPagesByType(pageType: PageType): Promise<ExamplePage[]> {
+  getPagesByType(category: Category): Promise<ExamplePage[]> {
     return fetch(url)
       .then((response) => {
         return response.json();
@@ -12,7 +12,7 @@ class PagesService {
       .then((serverPages) => {
 
         const examplesPages = serverPages
-          .filter((serverPage: any) => serverPage.pageType === pageType)
+          .filter((serverPage: any) => serverPage.category === category)
           .map(this.map);
 
         return examplesPages;
@@ -47,7 +47,7 @@ class PagesService {
       content: serverPage.content,
       dateString: serverPage.dateString,
       baseImageName: serverPage.baseImageName,
-      pageType: serverPage.pageType,
+      category: serverPage.Category,
       isFavourite: serverPage.isFavourite
     } as ExamplePage;
   }

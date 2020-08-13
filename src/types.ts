@@ -4,11 +4,11 @@ export interface ExamplePage {
   content: string;
   dateString: string;
   baseImageName: string;
-  pageType: PageType;
+  category: Category;
   isFavourite: boolean;
 }
 
-export enum PageType {
+export enum Category {
   Home = 'HOME',
   KitchenSink = 'KITCHEN_SINK'
 }

@@ -13,6 +13,7 @@
                       {{ examplePage.title }}
                     </div>
                     <div>{{ examplePage.dateString }}</div>
+                    <div>{{ examplePage.content }}</div>
                   </div>
                 </v-flex>
                 <v-flex xs3>

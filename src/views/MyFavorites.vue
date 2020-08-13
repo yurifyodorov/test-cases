@@ -10,7 +10,7 @@
   import { Component, Vue } from 'vue-property-decorator';
   import pagesService from '../services/pagesService';
   import PageList from '../components/PageList.vue';
-  import { PageType, ExamplePage } from '../types';
+  import { Category, ExamplePage } from '../types';
 
   @Component({
     components: {

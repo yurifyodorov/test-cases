@@ -12,7 +12,7 @@
 import { Component, Vue } from "vue-property-decorator";
 import pagesService from "../services/pagesService";
 import PageList from "../components/PageList.vue";
-import { PageType, ExamplePage } from "../types";
+import { Category, ExamplePage } from "../types";
 
 @Component({
   components: {
@@ -24,7 +24,7 @@ export default class Home extends Vue {
 
   mounted() {
     pagesService
-      .getPagesByType(PageType.KitchenSink)
+      .getPagesByType(Category.KitchenSink)
       .then((examplesPages: ExamplePage[]) => {
         this.examplesPages = examplesPages;
       });
