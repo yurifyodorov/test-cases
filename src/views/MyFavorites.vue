@@ -21,7 +21,7 @@
     newsArticles: NewsArticle[] = [];
 
     mounted() {
-      newsService.getArticlesByType(ArticleType.TopStory)
+      newsService.getFavorites()
         .then((newsArticles: NewsArticle[]) => {
           this.newsArticles = newsArticles;
         });
