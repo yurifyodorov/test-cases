@@ -2,8 +2,8 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import store from '../store';
 
-import TopStories from '../views/TopStories.vue';
-import CodeExamples from '../views/CodeExamples.vue';
+import Home from '../views/Home.vue';
+import KitchenSink from '../views/KitchenSink.vue';
 import MyFavorites from '../views/MyFavorites.vue';
 
 Vue.use(Router);
@@ -22,15 +22,15 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'top-stories',
-      component: TopStories,
-      meta: new RouteMeta({ title: 'Top Stories' })
+      name: 'home',
+      component: Home,
+      meta: new RouteMeta({ title: 'Home' })
     },
     {
-      path: '/code-examples',
-      name: 'code-examples',
-      component: CodeExamples,
-      meta: new RouteMeta({ title: 'Code Examples' })
+      path: '/kitchen-sink',
+      name: 'kitchen-sink',
+      component: KitchenSink,
+      meta: new RouteMeta({ title: 'Kitchen Sink' })
     },
     {
       path: '/my-favorites',

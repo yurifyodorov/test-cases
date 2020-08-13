@@ -7,13 +7,13 @@
     v-model="activeItem"
     color="primary"
   >
-    <v-btn value="top" :to="{ path: '/'}">
-      <span>Top Stories</span>
+    <v-btn value="home" :to="{ path: '/'}">
+      <span>Home</span>
       <v-icon>thumb_up</v-icon>
     </v-btn>
 
-    <v-btn value="code" :to="{ name: 'code-examples'}">
-      <span>Code Examples</span>
+    <v-btn value="kitchen-sink" :to="{ name: 'kitchen-sink'}">
+      <span>Kitchen Sink</span>
       <v-icon>code</v-icon>
     </v-btn>
 
