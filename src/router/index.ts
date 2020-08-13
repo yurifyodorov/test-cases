@@ -32,94 +32,94 @@ const routes: Array<RouteConfig> = [
       import(/* webpackChunkName: "traversal" */ "../views/Traversal.vue")
   },
   {
-    path: "/actions",
+    path: "/actions/",
     name: "Actions",
     component: () =>
-      import(/* webpackChunkName: "traversal" */ "../views/Actions.vue")
+      import(/* webpackChunkName: "actions" */ "../views/Actions.vue"),
   },
   {
     path: "/window",
     name: "Window",
     component: () =>
-      import(/* webpackChunkName: "traversal" */ "../views/Window.vue")
+      import(/* webpackChunkName: "window" */ "../views/Window.vue")
   },
   {
     path: "/viewport",
     name: "Viewport",
     component: () =>
-      import(/* webpackChunkName: "traversal" */ "../views/Viewport.vue")
+      import(/* webpackChunkName: "viewport" */ "../views/Viewport.vue")
   },
   {
     path: "/location",
     name: "Location",
     component: () =>
-      import(/* webpackChunkName: "traversal" */ "../views/Location.vue")
+      import(/* webpackChunkName: "location" */ "../views/Location.vue")
   },
   {
     path: "/navigation",
     name: "Navigation",
     component: () =>
-      import(/* webpackChunkName: "traversal" */ "../views/Navigation.vue")
+      import(/* webpackChunkName: "navigation" */ "../views/Navigation.vue")
   },
   {
     path: "/assertions",
     name: "Assertions",
     component: () =>
-      import(/* webpackChunkName: "traversal" */ "../views/Assertions.vue")
+      import(/* webpackChunkName: "assertions" */ "../views/Assertions.vue")
   },
   {
     path: "/misc",
     name: "Misc",
     component: () =>
-      import(/* webpackChunkName: "traversal" */ "../views/Misc.vue")
+      import(/* webpackChunkName: "misc" */ "../views/Misc.vue")
   },
   {
     path: "/connectors",
     name: "Connectors",
     component: () =>
-      import(/* webpackChunkName: "traversal" */ "../views/Connectors.vue")
+      import(/* webpackChunkName: "connectors" */ "../views/Connectors.vue")
   },
   {
     path: "/aliasing",
     name: "Aliasing",
     component: () =>
-      import(/* webpackChunkName: "traversal" */ "../views/Aliasing.vue")
+      import(/* webpackChunkName: "aliasing" */ "../views/Aliasing.vue")
   },
   {
     path: "/waiting",
     name: "Waiting",
     component: () =>
-      import(/* webpackChunkName: "traversal" */ "../views/Waiting.vue")
+      import(/* webpackChunkName: "waiting" */ "../views/Waiting.vue")
   },
   {
     path: "/network-requests",
     name: "NetworkRequests",
     component: () =>
-      import(/* webpackChunkName: "traversal" */ "../views/NetworkRequests.vue")
+      import(/* webpackChunkName: "network-requests" */ "../views/NetworkRequests.vue")
   },
   {
     path: "/files",
     name: "Files",
     component: () =>
-      import(/* webpackChunkName: "traversal" */ "../views/Files.vue")
+      import(/* webpackChunkName: "files" */ "../views/Files.vue")
   },
   {
     path: "/local-storage",
     name: "LocalStorage",
     component: () =>
-      import(/* webpackChunkName: "traversal" */ "../views/LocalStorage.vue")
+      import(/* webpackChunkName: "local-storage" */ "../views/LocalStorage.vue")
   },
   {
     path: "/cookies",
     name: "Cookies",
     component: () =>
-      import(/* webpackChunkName: "traversal" */ "../views/Cookies.vue")
+      import(/* webpackChunkName: "cookies" */ "../views/Cookies.vue")
   },
   {
     path: "/spies-stubs-clocks",
     name: "SpiesStubsClocks",
     component: () =>
-      import(/* webpackChunkName: "traversal" */ "../views/SpiesStubsClocks.vue")
+      import(/* webpackChunkName: "spies-stubs-clocks" */ "../views/SpiesStubsClocks.vue")
   }
 ];
 
