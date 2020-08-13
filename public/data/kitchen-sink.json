@@ -1,32 +1,5 @@
 [
   {
-    "id": 1,
-    "title": "Page #1 in Home",
-    "content": "Article coming soon",
-    "dateString": "22 Jan 2019",
-    "baseImageName": "winner",
-    "pageType": "HOME",
-    "isFavourite": true
-  },
-  {
-    "id": 3,
-    "title": "Page #2 in Home",
-    "content": "Article coming soon",
-    "dateString": "20 Jan 2019",
-    "baseImageName": "working",
-    "pageType": "HOME",
-    "isFavourite": false
-  },
-  {
-    "id": 5,
-    "title": "Page #3 in Home",
-    "content": "Article coming soon",
-    "dateString": "18 Jan 2019",
-    "baseImageName": "phone",
-    "pageType": "HOME",
-    "isFavourite": true
-  },
-  {
     "id": 2,
     "title": "Page #1 in Kitchen Sink",
     "content": "Article coming soon",
