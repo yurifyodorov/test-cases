@@ -4,29 +4,29 @@
       В этом разделе будут примеры тестов с <a href="https://example.cypress.io/">https://example.cypress.io/</a>
       с применением BDD подхода
     </v-alert>
-    <NewsList :newsArticles="newsArticles"></NewsList>
+    <PageList :examplesPages="examplesPages"></PageList>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import newsService from "../services/newsService";
-import NewsList from "../components/NewsList.vue";
-import { ArticleType, NewsArticle } from "../types";
+import pagesService from "../services/pagesService";
+import PageList from "../components/PageList.vue";
+import { PageType, ExamplePage } from "../types";
 
 @Component({
   components: {
-    NewsList
+    PageList
   }
 })
-export default class TopStories extends Vue {
-  newsArticles: NewsArticle[] = [];
+export default class Home extends Vue {
+  examplesPages: ExamplePage[] = [];
 
   mounted() {
-    newsService
-      .getArticlesByType(ArticleType.CodeExample)
-      .then((newsArticles: NewsArticle[]) => {
-        this.newsArticles = newsArticles;
+    pagesService
+      .getPagesByType(PageType.KitchenSink)
+      .then((examplesPages: ExamplePage[]) => {
+        this.examplesPages = examplesPages;
       });
   }
 }

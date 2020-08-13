@@ -1,16 +1,16 @@
-export interface NewsArticle {
+export interface ExamplePage {
   id: number;
   title: string;
   content: string;
   dateString: string;
   baseImageName: string;
-  articleType: ArticleType;
+  pageType: PageType;
   isFavourite: boolean;
 }
 
-export enum ArticleType {
-  TopStory = 'TOP_STORY',
-  CodeExample = 'CODE_EXAMPLE'
+export enum PageType {
+  Home = 'HOME',
+  KitchenSink = 'KITCHEN_SINK'
 }
 
 
