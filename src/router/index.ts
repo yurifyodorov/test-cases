@@ -35,7 +35,7 @@ const routes: Array<RouteConfig> = [
     path: "/actions/",
     name: "Actions",
     component: () =>
-      import(/* webpackChunkName: "actions" */ "../views/Actions.vue"),
+      import(/* webpackChunkName: "actions" */ "../views/Actions.vue")
   },
   {
     path: "/window",
@@ -70,8 +70,7 @@ const routes: Array<RouteConfig> = [
   {
     path: "/misc",
     name: "Misc",
-    component: () =>
-      import(/* webpackChunkName: "misc" */ "../views/Misc.vue")
+    component: () => import(/* webpackChunkName: "misc" */ "../views/Misc.vue")
   },
   {
     path: "/connectors",
@@ -95,7 +94,9 @@ const routes: Array<RouteConfig> = [
     path: "/network-requests",
     name: "NetworkRequests",
     component: () =>
-      import(/* webpackChunkName: "network-requests" */ "../views/NetworkRequests.vue")
+      import(
+        /* webpackChunkName: "network-requests" */ "../views/NetworkRequests.vue"
+      )
   },
   {
     path: "/files",
@@ -107,7 +108,9 @@ const routes: Array<RouteConfig> = [
     path: "/local-storage",
     name: "LocalStorage",
     component: () =>
-      import(/* webpackChunkName: "local-storage" */ "../views/LocalStorage.vue")
+      import(
+        /* webpackChunkName: "local-storage" */ "../views/LocalStorage.vue"
+      )
   },
   {
     path: "/cookies",
@@ -119,12 +122,14 @@ const routes: Array<RouteConfig> = [
     path: "/spies-stubs-clocks",
     name: "SpiesStubsClocks",
     component: () =>
-      import(/* webpackChunkName: "spies-stubs-clocks" */ "../views/SpiesStubsClocks.vue")
+      import(
+        /* webpackChunkName: "spies-stubs-clocks" */ "../views/SpiesStubsClocks.vue"
+      )
   }
 ];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   routes
 });
 
