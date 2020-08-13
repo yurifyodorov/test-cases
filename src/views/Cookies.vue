@@ -1,3 +1,5 @@
 <template>
-  <h1>Cookies</h1>
+  <div>
+    <h1>Cookies</h1>
+  </div>
 </template>

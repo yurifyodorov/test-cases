@@ -1,3 +1,5 @@
 <template>
-  <h1>Local Storage</h1>
+  <div>
+    <h1>Local Storage</h1>
+  </div>
 </template>

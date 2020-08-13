@@ -1,3 +1,5 @@
 <template>
-  <h1>Aliasing</h1>
+  <div>
+    <h1>Aliasing</h1>
+  </div>
 </template>

@@ -28,7 +28,9 @@
         >
       </ul>
     </Sidebar>
-    <router-view />
+    <main class="main-content">
+      <router-view />
+    </main>
   </div>
 </template>
 
@@ -77,6 +79,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 0.5rem 0.8rem;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 ul.sidebar-panel-nav {
@@ -89,5 +92,16 @@ ul.sidebar-panel-nav > a {
   font-size: 1.5rem;
   display: block;
   padding-bottom: 0.5em;
+}
+
+.main-content {
+  // FIXME: выглядит нормально только на больших экранах
+  margin-left: 340px; // equal aside width
+  margin-right: 340px; // for symmetry
+  padding: 0 40px;
+
+  h1 {
+    color: #fff;
+  }
 }
 </style>

@@ -1,3 +1,5 @@
 <template>
-  <h1>Viewport</h1>
+  <div>
+    <h1>Viewport</h1>
+  </div>
 </template>

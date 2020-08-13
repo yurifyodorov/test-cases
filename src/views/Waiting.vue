@@ -1,3 +1,5 @@
 <template>
-  <h1>Waiting</h1>
+  <div>
+    <h1>Waiting</h1>
+  </div>
 </template>

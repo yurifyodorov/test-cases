@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar">
+  <aside class="sidebar">
     <div
       class="sidebar-backdrop"
       @click="closeSidebarPanel"
@@ -10,7 +10,7 @@
         <slot></slot>
       </div>
     </transition>
-  </div>
+  </aside>
 </template>
 <script>
 import { store, mutations } from "@/store";

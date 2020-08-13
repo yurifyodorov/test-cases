@@ -1,3 +1,5 @@
 <template>
-  <h1>Connectors</h1>
+  <div>
+    <h1>Connectors</h1>
+  </div>
 </template>
