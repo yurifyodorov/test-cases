@@ -1,136 +1,52 @@
-import Vue from "vue";
-import VueRouter, { RouteConfig } from "vue-router";
-import Home from "../views/Home.vue";
+import Vue from 'vue';
+import Router from 'vue-router';
+import store from '../store';
 
-Vue.use(VueRouter);
+import TopStories from '../views/TopStories.vue';
+import CodeExamples from '../views/CodeExamples.vue';
+import MyFavorites from '../views/MyFavorites.vue';
 
-const routes: Array<RouteConfig> = [
-  {
-    path: "/",
-    name: "Home",
-    component: Home
-  },
-  {
-    path: "/querying",
-    name: "Querying",
-    // route level code-splitting
-    // this generates a separate chunk (querying.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "querying" */ "../views/Querying.vue")
-  },
-  {
-    path: "/traversal",
-    name: "Traversal",
-    component: () =>
-      import(/* webpackChunkName: "traversal" */ "../views/Traversal.vue")
-  },
-  {
-    path: "/traversal",
-    name: "Traversal",
-    component: () =>
-      import(/* webpackChunkName: "traversal" */ "../views/Traversal.vue")
-  },
-  {
-    path: "/actions/",
-    name: "Actions",
-    component: () =>
-      import(/* webpackChunkName: "actions" */ "../views/Actions.vue")
-  },
-  {
-    path: "/window",
-    name: "Window",
-    component: () =>
-      import(/* webpackChunkName: "window" */ "../views/Window.vue")
-  },
-  {
-    path: "/viewport",
-    name: "Viewport",
-    component: () =>
-      import(/* webpackChunkName: "viewport" */ "../views/Viewport.vue")
-  },
-  {
-    path: "/location",
-    name: "Location",
-    component: () =>
-      import(/* webpackChunkName: "location" */ "../views/Location.vue")
-  },
-  {
-    path: "/navigation",
-    name: "Navigation",
-    component: () =>
-      import(/* webpackChunkName: "navigation" */ "../views/Navigation.vue")
-  },
-  {
-    path: "/assertions",
-    name: "Assertions",
-    component: () =>
-      import(/* webpackChunkName: "assertions" */ "../views/Assertions.vue")
-  },
-  {
-    path: "/misc",
-    name: "Misc",
-    component: () => import(/* webpackChunkName: "misc" */ "../views/Misc.vue")
-  },
-  {
-    path: "/connectors",
-    name: "Connectors",
-    component: () =>
-      import(/* webpackChunkName: "connectors" */ "../views/Connectors.vue")
-  },
-  {
-    path: "/aliasing",
-    name: "Aliasing",
-    component: () =>
-      import(/* webpackChunkName: "aliasing" */ "../views/Aliasing.vue")
-  },
-  {
-    path: "/waiting",
-    name: "Waiting",
-    component: () =>
-      import(/* webpackChunkName: "waiting" */ "../views/Waiting.vue")
-  },
-  {
-    path: "/network-requests",
-    name: "NetworkRequests",
-    component: () =>
-      import(
-        /* webpackChunkName: "network-requests" */ "../views/NetworkRequests.vue"
-      )
-  },
-  {
-    path: "/files",
-    name: "Files",
-    component: () =>
-      import(/* webpackChunkName: "files" */ "../views/Files.vue")
-  },
-  {
-    path: "/local-storage",
-    name: "LocalStorage",
-    component: () =>
-      import(
-        /* webpackChunkName: "local-storage" */ "../views/LocalStorage.vue"
-      )
-  },
-  {
-    path: "/cookies",
-    name: "Cookies",
-    component: () =>
-      import(/* webpackChunkName: "cookies" */ "../views/Cookies.vue")
-  },
-  {
-    path: "/spies-stubs-clocks",
-    name: "SpiesStubsClocks",
-    component: () =>
-      import(
-        /* webpackChunkName: "spies-stubs-clocks" */ "../views/SpiesStubsClocks.vue"
-      )
+Vue.use(Router);
+
+class RouteMeta {
+  title: string;
+
+  constructor({title}: { title: string }) {
+    this.title = title;
   }
-];
+}
 
-const router = new VueRouter({
-  mode: "history",
-  routes
+const router = new Router({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes: [
+    {
+      path: '/',
+      name: 'top-stories',
+      component: TopStories,
+      meta: new RouteMeta({ title: 'Top Stories' })
+    },
+    {
+      path: '/code-examples',
+      name: 'code-examples',
+      component: CodeExamples,
+      meta: new RouteMeta({ title: 'Code Examples' })
+    },
+    {
+      path: '/my-favorites',
+      name: 'my-favorites',
+      component: MyFavorites,
+      meta: new RouteMeta({ title: 'Favorites' })
+    }
+  ]
+});
+
+// This callback runs before every route change, including on initial load
+router.beforeEach((to, from, next) => {
+
+  const routeMeta = to.meta as RouteMeta;
+  store.dispatch('topToolbar/changeTitle', routeMeta.title);
+  next();
 });
 
 export default router;
