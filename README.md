@@ -2,6 +2,8 @@
 # vuetify-mobile-app
 The following Medium articles accompany this repo.
 
+https://yurifyodorov.github.io/test-cases/dist/
+
 ## Creating a Mobile Web App with Vue, Vuetify & Typescript — Part 1
 **Setup project and create framework components utilizing Vuetify**
 
