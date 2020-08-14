@@ -1,10 +1,11 @@
 <template>
   <div>
 
+    <!-- TODO: перенести компонент PageList в боковое меню -->
     <v-container fluid grid-list-lg>
       <v-layout row wrap>
         <v-flex xs12 v-for="examplePage in examplesPages" :key="examplePage.id">
-          <v-card :to="{ name: 'querying'}">
+          <v-card :to="examplePage.slug">
             <v-container fluid grid-list-lg>
               <v-layout row>
                 <v-flex xs9>
@@ -20,8 +21,10 @@
                   <v-img
                     contain
                     :src="`/thumbnails/${examplePage.baseImageName}.png`"
-                    :srcset="`/thumbnails/${examplePage.baseImageName}.png 1x,
-                             /thumbnails/${examplePage.baseImageName}@2x.png 2x`"
+                    :srcset="
+                      `/thumbnails/${examplePage.baseImageName}.png 1x,
+                             /thumbnails/${examplePage.baseImageName}@2x.png 2x`
+                    "
                     height="72px"
                     transition="false"
                   ></v-img>
@@ -30,19 +33,17 @@
             </v-container>
           </v-card>
         </v-flex>
-
       </v-layout>
     </v-container>
-
   </div>
 </template>
 
 <script lang="ts">
-  import { Component, Prop, Vue } from 'vue-property-decorator';
-  import { ExamplePage } from '../types';
+import { Component, Prop, Vue } from "vue-property-decorator";
+import { ExamplePage } from "../types";
 
-  @Component
-  export default class PageList extends Vue {
-    @Prop({ type: Array, required: true }) examplesPages!: ExamplePage[];
-  }
+@Component
+export default class PageList extends Vue {
+  @Prop({ type: Array, required: true }) examplesPages!: ExamplePage[];
+}
 </script>

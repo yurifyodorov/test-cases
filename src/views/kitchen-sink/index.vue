@@ -6,27 +6,6 @@
       с применением BDD подхода
     </v-alert>
 
-    <p>
-      <!-- TODO: выводить циклом, данные брать из pages.json -->
-      <router-link to="/kitchen-sink/querying">Querying</router-link> |
-      <router-link to="/kitchen-sink/traversal">Traversal</router-link> |
-      <router-link to="/kitchen-sink/actions">Actions</router-link> |
-      <router-link to="/kitchen-sink/window">Window</router-link> |
-      <router-link to="/kitchen-sink/viewport">Viewport</router-link> |
-      <router-link to="/kitchen-sink/location">Location</router-link> |
-      <router-link to="/kitchen-sink/navigation">Navigation</router-link> |
-      <router-link to="/kitchen-sink/assertions">Assertions</router-link> |
-      <router-link to="/kitchen-sink/misc">Misc</router-link> |
-      <router-link to="/kitchen-sink/connectors">Connectors</router-link> |
-      <router-link to="/kitchen-sink/aliasing">Aliasing</router-link> |
-      <router-link to="/kitchen-sink/waiting">Waiting</router-link> |
-      <router-link to="/kitchen-sink/network-requests">Network Requests</router-link> |
-      <router-link to="/kitchen-sink/files">Files</router-link> |
-      <router-link to="/kitchen-sink/local-storage">Local Storage</router-link> |
-      <router-link to="/kitchen-sink/cookies">Cookies</router-link> |
-      <router-link to="/kitchen-sink/spies-stubs-clocks">Spies, Stubs & Clocks</router-link>
-    </p>
-
     <router-view></router-view>
 
     <PageList :examplesPages="examplesPages"></PageList>
