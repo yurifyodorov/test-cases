@@ -26,8 +26,7 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home,
+      name: 'home', component: Home,
       meta: new RouteMeta({ title: 'Home' })
     },
     {
@@ -37,13 +36,12 @@ const router = new Router({
       meta: new RouteMeta({ title: 'Kitchen Sink' }),
       children: [
         {
-          path: 'querying',
-          component: Querying,
+          path: 'querying', component: Querying,
           meta: new RouteMeta({ title: 'Querying' })
         },
         {
-          path: 'traversal',
-          component: Traversal
+          path: 'traversal', component: Traversal,
+          meta: new RouteMeta({ title: 'Traversal' })
         }
       ]
     },

@@ -5,7 +5,13 @@
       <a href="https://example.cypress.io/">https://example.cypress.io/</a>
       с применением BDD подхода
     </v-alert>
-    <PageList :examplesPages="examplesPages"></PageList>
+
+    <p>
+      <router-link to="/kitchen-sink/querying">querying</router-link> |
+      <router-link to="/kitchen-sink/traversal">traversal</router-link>
+    </p>
+
+    <router-view></router-view>
   </div>
 </template>
 

@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Traversal</h1>
-    <PageList :examplesPages="examplesPages"></PageList>
+    <p>содержимое страницы traversal</p>
   </div>
 </template>
