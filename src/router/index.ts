@@ -3,7 +3,11 @@ import Router from 'vue-router';
 import store from '../store';
 
 import Home from '../views/Home.vue';
-import KitchenSink from '../views/KitchenSink.vue';
+
+import KitchenSink from '../views/kitchen-sink/index.vue';
+import Querying from '../views/kitchen-sink/Querying.vue';
+import Traversal from '../views/kitchen-sink/Traversal.vue';
+
 import MyFavorites from '../views/MyFavorites.vue';
 
 Vue.use(Router);
@@ -30,7 +34,18 @@ const router = new Router({
       path: '/kitchen-sink',
       name: 'kitchen-sink',
       component: KitchenSink,
-      meta: new RouteMeta({ title: 'Kitchen Sink' })
+      meta: new RouteMeta({ title: 'Kitchen Sink' }),
+      children: [
+        {
+          path: 'querying',
+          component: Querying,
+          meta: new RouteMeta({ title: 'Querying' })
+        },
+        {
+          path: 'traversal',
+          component: Traversal
+        }
+      ]
     },
     {
       path: '/my-favorites',

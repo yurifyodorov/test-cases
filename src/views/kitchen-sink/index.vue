@@ -1,7 +1,8 @@
 <template>
   <div>
     <v-alert type="info">
-      В этом разделе будут примеры тестов с <a href="https://example.cypress.io/">https://example.cypress.io/</a>
+      В этом разделе будут примеры тестов с
+      <a href="https://example.cypress.io/">https://example.cypress.io/</a>
       с применением BDD подхода
     </v-alert>
     <PageList :examplesPages="examplesPages"></PageList>
@@ -10,9 +11,9 @@
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import pagesService from "../services/pagesService";
-import PageList from "../components/PageList.vue";
-import { Category, ExamplePage } from "../types";
+import pagesService from "../../services/pagesService";
+import PageList from "../../components/PageList.vue";
+import { Category, ExamplePage } from "../../types";
 
 @Component({
   components: {
