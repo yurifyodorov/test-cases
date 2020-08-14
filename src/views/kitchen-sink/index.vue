@@ -7,6 +7,7 @@
     </v-alert>
 
     <p>
+      <!-- TODO: выводить циклом, данные брать из pages.json -->
       <router-link to="/kitchen-sink/querying">Querying</router-link> |
       <router-link to="/kitchen-sink/traversal">Traversal</router-link> |
       <router-link to="/kitchen-sink/actions">Actions</router-link> |
@@ -27,6 +28,8 @@
     </p>
 
     <router-view></router-view>
+
+    <PageList :examplesPages="examplesPages"></PageList>
   </div>
 </template>
 

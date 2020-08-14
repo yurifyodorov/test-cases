@@ -6,7 +6,8 @@
     "dateString": "21 Jan 2019",
     "baseImageName": "prettier",
     "category": "KITCHEN_SINK",
-    "isFavourite": false
+    "isFavourite": false,
+    "slug": "querying"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "dateString": "19 Jan 2019",
     "baseImageName": "question",
     "category": "KITCHEN_SINK",
-    "isFavourite": false
+    "isFavourite": false,
+    "slug": "traversal"
   },
   {
     "id": 3,

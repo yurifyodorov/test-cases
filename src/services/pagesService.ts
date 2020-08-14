@@ -48,7 +48,8 @@ class PagesService {
       dateString: serverPage.dateString,
       baseImageName: serverPage.baseImageName,
       category: serverPage.Category,
-      isFavourite: serverPage.isFavourite
+      isFavourite: serverPage.isFavourite,
+      slug: serverPage.slug
     } as ExamplePage;
   }
 

@@ -4,7 +4,7 @@
     <v-container fluid grid-list-lg>
       <v-layout row wrap>
         <v-flex xs12 v-for="examplePage in examplesPages" :key="examplePage.id">
-          <v-card :to="{ name: 'kitchen-sink', params: { pageName: examplePage.slug }}">
+          <v-card :to="{ name: 'querying'}">
             <v-container fluid grid-list-lg>
               <v-layout row>
                 <v-flex xs9>
