@@ -7,6 +7,21 @@ import Home from '../views/Home.vue';
 import KitchenSink from '../views/kitchen-sink/index.vue';
 import Querying from '../views/kitchen-sink/Querying.vue';
 import Traversal from '../views/kitchen-sink/Traversal.vue';
+import Actions from '../views/kitchen-sink/Actions.vue';
+import Window from '../views/kitchen-sink/Window.vue';
+import Viewport from '../views/kitchen-sink/Viewport.vue';
+import Location from '../views/kitchen-sink/Location.vue';
+import Navigation from '../views/kitchen-sink/Navigation.vue';
+import Assertions from '../views/kitchen-sink/Assertions.vue';
+import Misc from '../views/kitchen-sink/Misc.vue';
+import Connectors from '../views/kitchen-sink/Connectors.vue';
+import Aliasing from '../views/kitchen-sink/Aliasing.vue';
+import Waiting from '../views/kitchen-sink/Waiting.vue';
+import NetworkRequests from '../views/kitchen-sink/NetworkRequests.vue';
+import Files from '../views/kitchen-sink/Files.vue';
+import LocalStorage from '../views/kitchen-sink/LocalStorage.vue';
+import Cookies from '../views/kitchen-sink/Cookies.vue';
+import SpiesStubsClocks from '../views/kitchen-sink/SpiesStubsClocks.vue';
 
 import MyFavorites from '../views/MyFavorites.vue';
 
@@ -42,6 +57,66 @@ const router = new Router({
         {
           path: 'traversal', component: Traversal,
           meta: new RouteMeta({ title: 'Traversal' })
+        },
+        {
+          path: 'actions', component: Actions,
+          meta: new RouteMeta({ title: 'Actions' })
+        },
+        {
+          path: 'window', component: Window,
+          meta: new RouteMeta({ title: 'Window' })
+        },
+        {
+          path: 'viewport', component: Viewport,
+          meta: new RouteMeta({ title: 'Viewport' })
+        },
+        {
+          path: 'location', component: Location,
+          meta: new RouteMeta({ title: 'Location' })
+        },
+        {
+          path: 'navigation', component: Navigation,
+          meta: new RouteMeta({ title: 'Navigation' })
+        },
+        {
+          path: 'assertions', component: Assertions,
+          meta: new RouteMeta({ title: 'Assertions' })
+        },
+        {
+          path: 'misc', component: Misc,
+          meta: new RouteMeta({ title: 'Misc' })
+        },
+        {
+          path: 'connectors', component: Connectors,
+          meta: new RouteMeta({ title: 'Connectors' })
+        },
+        {
+          path: 'aliasing', component: Aliasing,
+          meta: new RouteMeta({ title: 'Aliasing' })
+        },
+        {
+          path: 'waiting', component: Waiting,
+          meta: new RouteMeta({ title: 'Waiting' })
+        },
+        {
+          path: 'network-requests', component: NetworkRequests,
+          meta: new RouteMeta({ title: 'Network Requests' })
+        },
+        {
+          path: 'files', component: Files,
+          meta: new RouteMeta({ title: 'Files' })
+        },
+        {
+          path: 'local-storage', component: LocalStorage,
+          meta: new RouteMeta({ title: 'Local Storage' })
+        },
+        {
+          path: 'cookies', component: Cookies,
+          meta: new RouteMeta({ title: 'Cookies' })
+        },
+        {
+          path: 'spies-stubs-clocks', component: SpiesStubsClocks,
+          meta: new RouteMeta({ title: 'Spies, Stubs & Clocks' })
         }
       ]
     },
