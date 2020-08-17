@@ -2,8 +2,7 @@ export interface ExamplePage {
   id: number;
   title: string;
   content: string;
-  dateString: string;
-  baseImageName: string;
+  icon: string;
   category: Category;
   isFavourite: boolean;
 }

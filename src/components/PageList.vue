@@ -1,40 +1,19 @@
 <template>
   <div>
-
-    <!-- TODO: перенести компонент PageList в боковое меню -->
-    <v-container fluid grid-list-lg>
-      <v-layout row wrap>
-        <v-flex xs12 v-for="examplePage in examplesPages" :key="examplePage.id">
-          <v-card :to="examplePage.slug">
-            <v-container fluid grid-list-lg>
-              <v-layout row>
-                <v-flex xs9>
-                  <div>
-                    <div class="subheading font-weight-medium">
-                      {{ examplePage.title }}
-                    </div>
-                    <div>{{ examplePage.dateString }}</div>
-                    <div>{{ examplePage.content }}</div>
-                  </div>
-                </v-flex>
-                <v-flex xs3>
-                  <v-img
-                    contain
-                    :src="`/thumbnails/${examplePage.baseImageName}.png`"
-                    :srcset="
-                      `/thumbnails/${examplePage.baseImageName}.png 1x,
-                             /thumbnails/${examplePage.baseImageName}@2x.png 2x`
-                    "
-                    height="72px"
-                    transition="false"
-                  ></v-img>
-                </v-flex>
-              </v-layout>
-            </v-container>
-          </v-card>
-        </v-flex>
-      </v-layout>
-    </v-container>
+    <v-list
+      dense
+      v-for="examplePage in examplesPages"
+      :key="examplePage.id"
+    >
+      <v-list-item :to="'/kitchen-sink/' + examplePage.slug">
+        <v-list-item-action>
+          <v-icon>{{ examplePage.icon }}</v-icon>
+        </v-list-item-action>
+        <v-list-item-content>
+          <v-list-item-title>{{ examplePage.title }}</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+    </v-list>
   </div>
 </template>
 

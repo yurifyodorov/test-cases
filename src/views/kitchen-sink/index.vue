@@ -7,8 +7,6 @@
     </v-alert>
 
     <router-view></router-view>
-
-    <PageList :examplesPages="examplesPages"></PageList>
   </div>
 </template>
 
