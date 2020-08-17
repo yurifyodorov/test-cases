@@ -1,0 +1,12 @@
+language: node_js               # Для сборки нужен будет NodeJS
+node_js:
+- stable                        # Выбираем последнюю стабильную версию NodeJS
+script:
+- echo dist/CNAME               # Создать файл CNAME и записываем в него домен
+deploy:
+provider: pages                 # Используется GitHub Pages
+skip_cleanup: true              # Не чистить рабочую директорию
+ 
+github_token: $GITHUB_TOKEN     # GITHUB_TOKEN - обеспечивает интеграцию Travis и GitHub
+                                # Сгенерировать токен https://github.com/settings/tokens
+local_dir: src                  # директория, из которой будут отдаваться файлы на сервер
