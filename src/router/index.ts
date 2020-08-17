@@ -121,10 +121,10 @@ const router = new Router({
       ]
     },
     {
-      path: '/my-favorites',
-      name: 'my-favorites',
+      path: '/my-cases',
+      name: 'my-cases',
       component: MyFavorites,
-      meta: new RouteMeta({ title: 'Favorites' })
+      meta: new RouteMeta({ title: 'Му cases' })
     }
   ]
 });

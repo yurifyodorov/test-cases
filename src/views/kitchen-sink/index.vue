@@ -1,13 +1,5 @@
 <template>
-  <div>
-    <v-alert type="info">
-      В этом разделе будут примеры тестов с
-      <a href="https://example.cypress.io/">https://example.cypress.io/</a>
-      с применением BDD подхода
-    </v-alert>
-
-    <router-view></router-view>
-  </div>
+  <router-view></router-view>
 </template>
 
 <script lang="ts">

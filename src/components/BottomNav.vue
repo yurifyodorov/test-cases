@@ -17,8 +17,8 @@
       <v-icon>code</v-icon>
     </v-btn>
 
-    <v-btn value="favorites" :to="{ name: 'my-favorites'}">
-      <span>Favorites</span>
+    <v-btn value="my-cases" :to="{ name: 'my-cases'}">
+      <span>Му cases</span>
       <v-icon>favorite</v-icon>
     </v-btn>
   </v-bottom-navigation>
