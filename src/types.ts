@@ -4,7 +4,7 @@ export interface ExamplePage {
   content: string;
   icon: string;
   category: Category;
-  isFavourite: boolean;
+  isDone: boolean;
 }
 
 export enum Category {

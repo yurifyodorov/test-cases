@@ -1,179 +1,239 @@
 [
   {
     "id": 1,
-    "title": "Querying",
+    "title": "cy.get()",
     "content": "Краткое описание примера",
-    "icon": "double_arrow",
+    "icon": "schedule",
     "category": "KITCHEN_SINK",
-    "isFavourite": false,
-    "slug": "querying"
+    "slug": "spies-stubs-clocks",
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
   },
   {
     "id": 2,
-    "title": "Traversal",
+    "title": "cy.contains()",
     "content": "Краткое описание примера",
-    "icon": "home_work",
+    "icon": "schedule",
     "category": "KITCHEN_SINK",
-    "isFavourite": false,
-    "slug": "traversal"
+    "slug": "spies-stubs-clocks",
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
   },
   {
     "id": 3,
-    "title": "Actions",
+    "title": ".within()",
     "content": "Краткое описание примера",
-    "icon": "double_arrow",
+    "icon": "schedule",
     "category": "KITCHEN_SINK",
-    "isFavourite": false,
-    "slug": "actions"
+    "slug": "spies-stubs-clocks",
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
   },
   {
     "id": 4,
-    "title": "Window",
+    "title": "cy.root()",
     "content": "Краткое описание примера",
-    "icon": "desktop_windows",
+    "icon": "schedule",
     "category": "KITCHEN_SINK",
-    "isFavourite": false,
-    "slug": "window"
+    "slug": "spies-stubs-clocks",
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
   },
   {
     "id": 5,
-    "title": "Viewport",
+    "title": ".children()",
     "content": "Краткое описание примера",
-    "icon": "fullscreen",
+    "icon": "schedule",
     "category": "KITCHEN_SINK",
-    "isFavourite": false,
-    "slug": "viewport"
+    "slug": "spies-stubs-clocks",
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
   },
   {
     "id": 6,
-    "title": "Location",
+    "title": ".closest()",
     "content": "Краткое описание примера",
-    "icon": "location_on",
+    "icon": "schedule",
     "category": "KITCHEN_SINK",
-    "isFavourite": false,
-    "slug": "location"
+    "slug": "spies-stubs-clocks",
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
   },
   {
     "id": 7,
-    "title": "Navigation",
+    "title": ".eq()",
     "content": "Краткое описание примера",
-    "icon": "navigation",
+    "icon": "schedule",
     "category": "KITCHEN_SINK",
-    "isFavourite": false,
-    "slug": "navigation"
+    "slug": "spies-stubs-clocks",
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
   },
   {
     "id": 8,
-    "title": "Assertions",
+    "title": ".filter()",
     "content": "Краткое описание примера",
-    "icon": "priority_high",
+    "icon": "schedule",
     "category": "KITCHEN_SINK",
-    "isFavourite": false,
-    "slug": "assertions"
+    "slug": "spies-stubs-clocks",
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
   },
   {
     "id": 9,
-    "title": "Misc",
+    "title": ".find()",
     "content": "Краткое описание примера",
-    "icon": "double_arrow",
+    "icon": "schedule",
     "category": "KITCHEN_SINK",
-    "isFavourite": false,
-    "slug": "misc"
+    "slug": "spies-stubs-clocks",
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
   },
   {
     "id": 10,
-    "title": "Connectors",
+    "title": ".first()",
     "content": "Краткое описание примера",
-    "icon": "double_arrow",
+    "icon": "schedule",
     "category": "KITCHEN_SINK",
-    "isFavourite": false,
-    "slug": "connectors"
+    "slug": "spies-stubs-clocks",
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
   },
   {
     "id": 11,
-    "title": "Aliasing",
+    "title": ".last()",
     "content": "Краткое описание примера",
-    "icon": "double_arrow",
+    "icon": "schedule",
     "category": "KITCHEN_SINK",
-    "isFavourite": false,
-    "slug": "aliasing"
+    "slug": "spies-stubs-clocks",
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
   },
   {
     "id": 12,
-    "title": "Waiting",
+    "title": ".next()",
     "content": "Краткое описание примера",
-    "icon": "double_arrow",
+    "icon": "schedule",
     "category": "KITCHEN_SINK",
-    "isFavourite": false,
-    "slug": "waiting"
+    "slug": "spies-stubs-clocks",
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
   },
   {
     "id": 13,
-    "title": "Network Requests",
+    "title": ".nextAll()",
     "content": "Краткое описание примера",
-    "icon": "double_arrow",
+    "icon": "schedule",
     "category": "KITCHEN_SINK",
-    "isFavourite": false,
-    "slug": "network-requests"
+    "slug": "spies-stubs-clocks",
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
   },
   {
     "id": 14,
-    "title": "Files",
+    "title": ".nextUntil()",
     "content": "Краткое описание примера",
-    "icon": "attach_file",
+    "icon": "schedule",
     "category": "KITCHEN_SINK",
-    "isFavourite": false,
-    "slug": "files"
+    "slug": "spies-stubs-clocks",
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
   },
   {
     "id": 15,
-    "title": "Local Storage",
+    "title": ".not()",
     "content": "Краткое описание примера",
-    "icon": "storage",
+    "icon": "schedule",
     "category": "KITCHEN_SINK",
-    "isFavourite": false,
-    "slug": "local-storage"
+    "slug": "spies-stubs-clocks",
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
   },
   {
     "id": 16,
-    "title": "Cookies",
+    "title": ".parent()",
     "content": "Краткое описание примера",
-    "icon": "double_arrow",
+    "icon": "schedule",
     "category": "KITCHEN_SINK",
-    "isFavourite": false,
-    "slug": "cookies"
+    "slug": "spies-stubs-clocks",
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
   },
   {
     "id": 17,
-    "title": "Spies, Stubs & Clocks",
+    "title": ".parents()",
     "content": "Краткое описание примера",
-    "icon": "double_arrow",
+    "icon": "schedule",
     "category": "KITCHEN_SINK",
-    "isFavourite": false,
-    "slug": "spies-stubs-clocks"
+    "slug": "spies-stubs-clocks",
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
   },
   {
-    "id": 100,
-    "title": "Page #1 in Home",
+    "id": 18,
+    "title": ".parentsUntil()",
     "content": "Краткое описание примера",
-    "icon": "double_arrow",
+    "icon": "schedule",
     "category": "HOME",
-    "isFavourite": true
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
   },
   {
-    "id": 101,
-    "title": "Page #2 in Home",
+    "id": 19,
+    "title": ".prev()",
     "content": "Краткое описание примера",
-    "icon": "double_arrow",
+    "icon": "done",
     "category": "HOME",
-    "isFavourite": false
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
   },
   {
-    "id": 102,
-    "title": "Page #3 in Home",
+    "id": 20,
+    "title": ".prevAll()",
     "content": "Краткое описание примера",
-    "icon": "double_arrow",
+    "icon": "done",
     "category": "HOME",
-    "isFavourite": true
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
+  },
+  {
+    "id": 21,
+    "title": ".prevUntil()",
+    "content": "Краткое описание примера",
+    "icon": "done",
+    "category": "HOME",
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
+  },
+  {
+    "id": 22,
+    "title": ".siblings()",
+    "content": "Краткое описание примера",
+    "icon": "done",
+    "category": "HOME",
+    "isWaiting": true,
+    "inProgress": false,
+    "isDone": false
   }
 ]

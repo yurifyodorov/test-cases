@@ -8,17 +8,17 @@
     color="primary"
   >
     <v-btn value="home" :to="{ path: '/'}">
-      <span>Home</span>
+      <span>Done</span>
       <v-icon>thumb_up</v-icon>
     </v-btn>
 
-    <v-btn value="kitchen-sink" :to="{ name: 'kitchen-sink'}">
-      <span>Kitchen Sink</span>
+    <v-btn value="progress" :to="{ name: 'progress'}">
+      <span>In progress</span>
       <v-icon>code</v-icon>
     </v-btn>
 
-    <v-btn value="my-cases" :to="{ name: 'my-cases'}">
-      <span>Му cases</span>
+    <v-btn value="waiting" :to="{ name: 'waiting'}">
+      <span>Waiting</span>
       <v-icon>favorite</v-icon>
     </v-btn>
   </v-bottom-navigation>

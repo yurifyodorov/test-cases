@@ -2,16 +2,17 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import store from '../store';
 
-import Home from '../views/Home.vue';
+import DonePage from '../views/DonePage.vue';
+import WaitingPage from '../views/WaitingPage.vue';
+import ProgressPage from '../views/ProgressPage.vue';
 
-import KitchenSink from '../views/kitchen-sink/index.vue';
-import Querying from '../views/kitchen-sink/commands/Querying.vue';
-import Traversal from '../views/kitchen-sink/commands/Traversal.vue';
-import Actions from '../views/kitchen-sink/commands/Actions.vue';
-import Window from '../views/kitchen-sink/commands/Window.vue';
-import Viewport from '../views/kitchen-sink/commands/Viewport.vue';
-import Location from '../views/kitchen-sink/commands/Location.vue';
-import Navigation from '../views/kitchen-sink/commands/Navigation.vue';
+import Querying from '../views/cypress/commands/Querying.vue';
+import Traversal from '../views/cypress/commands/Traversal.vue';
+import Actions from '../views/cypress/commands/Actions.vue';
+import Window from '../views/cypress/commands/Window.vue';
+import Viewport from '../views/cypress/commands/Viewport.vue';
+import Location from '../views/cypress/commands/Location.vue';
+import Navigation from '../views/cypress/commands/Navigation.vue';
 import Assertions from '../views/kitchen-sink/commands/Assertions.vue';
 import Misc from '../views/kitchen-sink/commands/Misc.vue';
 import Connectors from '../views/kitchen-sink/commands/Connectors.vue';
@@ -23,7 +24,6 @@ import LocalStorage from '../views/kitchen-sink/commands/LocalStorage.vue';
 import Cookies from '../views/kitchen-sink/commands/Cookies.vue';
 import SpiesStubsClocks from '../views/kitchen-sink/commands/SpiesStubsClocks.vue';
 
-import MyFavorites from '../views/MyFavorites.vue';
 
 Vue.use(Router);
 
@@ -41,14 +41,14 @@ const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'home', component: Home,
-      meta: new RouteMeta({ title: 'Home' })
+      name: 'done', component: DonePage,
+      meta: new RouteMeta({ title: "Tester's reference" })
     },
     {
-      path: '/kitchen-sink',
-      name: 'kitchen-sink',
-      component: KitchenSink,
-      meta: new RouteMeta({ title: 'Kitchen Sink' }),
+      path: '/progress',
+      name: 'progress',
+      component: ProgressPage,
+      meta: new RouteMeta({ title: 'In progress' }),
       children: [
         {
           path: 'querying', component: Querying,
@@ -121,10 +121,10 @@ const router = new Router({
       ]
     },
     {
-      path: '/my-cases',
-      name: 'my-cases',
-      component: MyFavorites,
-      meta: new RouteMeta({ title: 'Му cases' })
+      path: '/waiting',
+      name: 'waiting',
+      component: WaitingPage,
+      meta: new RouteMeta({ title: 'Waiting' })
     }
   ]
 });

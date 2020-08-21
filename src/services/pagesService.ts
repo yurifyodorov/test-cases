@@ -23,14 +23,54 @@ class PagesService {
       });
   }
 
-  getFavorites(): Promise<ExamplePage[]> {
+  getCompletedPages(): Promise<ExamplePage[]> {
     return fetch(url)
       .then(response => {
         return response.json();
       })
       .then(serverPages => {
         const examplesPages = serverPages
-          .filter((serverPage: any) => serverPage.isFavourite === true)
+          .filter((serverPage: any) => serverPage.isDone === true)
+          .map(this.map);
+
+        return examplesPages;
+      })
+      .catch(e => {
+        console.error(
+          "An error occurred retrieving the example pages from " + url,
+          e
+        );
+      });
+  }
+
+  getProgressPages(): Promise<ExamplePage[]> {
+    return fetch(url)
+      .then(response => {
+        return response.json();
+      })
+      .then(serverPages => {
+        const examplesPages = serverPages
+          .filter((serverPage: any) => serverPage.inProgress === true)
+          .map(this.map);
+
+        return examplesPages;
+      })
+      .catch(e => {
+        console.error(
+          "An error occurred retrieving the example pages from " + url,
+          e
+        );
+      });
+  }
+
+  getWaitingPages(): Promise<ExamplePage[]> {
+    return fetch(url)
+      .then(response => {
+        return response.json();
+      })
+      .then(serverPages => {
+        const examplesPages = serverPages
+          .filter((serverPage: any) => serverPage.isWaiting === true)
           .map(this.map);
 
         return examplesPages;
@@ -50,8 +90,10 @@ class PagesService {
       content: serverPage.content,
       icon: serverPage.icon,
       category: serverPage.Category,
-      isFavourite: serverPage.isFavourite,
-      slug: serverPage.slug
+      slug: serverPage.slug,
+      isWaiting: serverPage.isWaiting,
+      inProgress: serverPage.inProgress,
+      isDone: serverPage.isDone,
     } as ExamplePage;
   }
 }

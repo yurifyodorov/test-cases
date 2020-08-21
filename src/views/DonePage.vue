@@ -21,7 +21,7 @@
     examplesPages: ExamplePage[] = [];
 
     mounted() {
-      pagesService.getPagesByType(Category.Home)
+      pagesService.getCompletedPages()
         .then((examplesPages: ExamplePage[]) => {
           this.examplesPages = examplesPages;
         });

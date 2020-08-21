@@ -8,6 +8,7 @@
       <v-app-bar-nav-icon @click.stop="toggleMenu"></v-app-bar-nav-icon>
 
       <v-toolbar-title>{{ title }}</v-toolbar-title>
+      
     </v-app-bar>
   </div>
 </template>

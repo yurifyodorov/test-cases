@@ -17,11 +17,11 @@
       PageList
     }
   })
-  export default class Home extends Vue {
+  export default class WaitingPage extends Vue {
     examplesPages: ExamplePage[] = [];
 
     mounted() {
-      pagesService.getFavorites()
+      pagesService.getWaitingPages()
         .then((examplesPages: ExamplePage[]) => {
           this.examplesPages = examplesPages;
         });
