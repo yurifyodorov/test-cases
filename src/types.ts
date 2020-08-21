@@ -4,12 +4,13 @@ export interface ExamplePage {
   content: string;
   icon: string;
   category: Category;
+  isWaiting: boolean;
+  inProgress: boolean;
   isDone: boolean;
 }
 
 export enum Category {
-  Home = 'HOME',
-  KitchenSink = 'KITCHEN_SINK'
+  Commands = 'COMMANDS'
 }
 
 

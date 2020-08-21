@@ -32,7 +32,7 @@ export default class TopToolbar extends Vue {
 
   mounted() {
     pagesService
-      .getPagesByType(Category.KitchenSink)
+      .getPagesByCategory(Category.Commands)
       .then((examplesPages: ExamplePage[]) => {
         this.examplesPages = examplesPages;
       });

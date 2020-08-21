@@ -3,7 +3,8 @@ import { Category, ExamplePage } from "../types";
 const url = "/data/pages.json";
 
 class PagesService {
-  getPagesByType(category: Category): Promise<ExamplePage[]> {
+
+  getPagesByCategory(category: Category): Promise<ExamplePage[]> {
     return fetch(url)
       .then(response => {
         return response.json();

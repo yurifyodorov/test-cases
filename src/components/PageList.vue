@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-list dense v-for="examplePage in examplesPages" :key="examplePage.id">
-      <v-list-item :to="'/kitchen-sink/commands/' + examplePage.slug">
+      <v-list-item :to="'/commands/' + examplePage.slug">
         <v-list-item-action>
           <v-icon>{{ examplePage.icon }}</v-icon>
         </v-list-item-action>

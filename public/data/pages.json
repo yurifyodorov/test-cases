@@ -4,8 +4,8 @@
     "title": "cy.get()",
     "content": "Краткое описание примера",
     "icon": "schedule",
-    "category": "KITCHEN_SINK",
-    "slug": "spies-stubs-clocks",
+    "category": "COMMANDS",
+    "slug": "get",
     "isWaiting": true,
     "inProgress": false,
     "isDone": false
@@ -13,10 +13,10 @@
   {
     "id": 2,
     "title": "cy.contains()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "schedule",
-    "category": "KITCHEN_SINK",
-    "slug": "spies-stubs-clocks",
+    "category": "COMMANDS",
+    "slug": "contains",
     "isWaiting": true,
     "inProgress": false,
     "isDone": false
@@ -24,10 +24,10 @@
   {
     "id": 3,
     "title": ".within()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "schedule",
-    "category": "KITCHEN_SINK",
-    "slug": "spies-stubs-clocks",
+    "category": "COMMANDS",
+    "slug": "within",
     "isWaiting": true,
     "inProgress": false,
     "isDone": false
@@ -35,10 +35,10 @@
   {
     "id": 4,
     "title": "cy.root()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "schedule",
-    "category": "KITCHEN_SINK",
-    "slug": "spies-stubs-clocks",
+    "category": "COMMANDS",
+    "slug": "root",
     "isWaiting": true,
     "inProgress": false,
     "isDone": false
@@ -46,10 +46,10 @@
   {
     "id": 5,
     "title": ".children()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "schedule",
-    "category": "KITCHEN_SINK",
-    "slug": "spies-stubs-clocks",
+    "category": "COMMANDS",
+    "slug": "children",
     "isWaiting": true,
     "inProgress": false,
     "isDone": false
@@ -57,10 +57,10 @@
   {
     "id": 6,
     "title": ".closest()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "schedule",
-    "category": "KITCHEN_SINK",
-    "slug": "spies-stubs-clocks",
+    "category": "COMMANDS",
+    "slug": "closest",
     "isWaiting": true,
     "inProgress": false,
     "isDone": false
@@ -68,10 +68,10 @@
   {
     "id": 7,
     "title": ".eq()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "schedule",
-    "category": "KITCHEN_SINK",
-    "slug": "spies-stubs-clocks",
+    "category": "COMMANDS",
+    "slug": "eq",
     "isWaiting": true,
     "inProgress": false,
     "isDone": false
@@ -79,10 +79,10 @@
   {
     "id": 8,
     "title": ".filter()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "schedule",
-    "category": "KITCHEN_SINK",
-    "slug": "spies-stubs-clocks",
+    "category": "COMMANDS",
+    "slug": "filter",
     "isWaiting": true,
     "inProgress": false,
     "isDone": false
@@ -90,10 +90,10 @@
   {
     "id": 9,
     "title": ".find()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "schedule",
-    "category": "KITCHEN_SINK",
-    "slug": "spies-stubs-clocks",
+    "category": "COMMANDS",
+    "slug": "find",
     "isWaiting": true,
     "inProgress": false,
     "isDone": false
@@ -101,10 +101,10 @@
   {
     "id": 10,
     "title": ".first()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "schedule",
-    "category": "KITCHEN_SINK",
-    "slug": "spies-stubs-clocks",
+    "category": "COMMANDS",
+    "slug": "first",
     "isWaiting": true,
     "inProgress": false,
     "isDone": false
@@ -112,10 +112,10 @@
   {
     "id": 11,
     "title": ".last()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "schedule",
-    "category": "KITCHEN_SINK",
-    "slug": "spies-stubs-clocks",
+    "category": "COMMANDS",
+    "slug": "last",
     "isWaiting": true,
     "inProgress": false,
     "isDone": false
@@ -123,10 +123,10 @@
   {
     "id": 12,
     "title": ".next()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "schedule",
-    "category": "KITCHEN_SINK",
-    "slug": "spies-stubs-clocks",
+    "category": "COMMANDS",
+    "slug": "next",
     "isWaiting": true,
     "inProgress": false,
     "isDone": false
@@ -134,10 +134,10 @@
   {
     "id": 13,
     "title": ".nextAll()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "schedule",
-    "category": "KITCHEN_SINK",
-    "slug": "spies-stubs-clocks",
+    "category": "COMMANDS",
+    "slug": "nextAll",
     "isWaiting": true,
     "inProgress": false,
     "isDone": false
@@ -145,10 +145,10 @@
   {
     "id": 14,
     "title": ".nextUntil()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "schedule",
-    "category": "KITCHEN_SINK",
-    "slug": "spies-stubs-clocks",
+    "category": "COMMANDS",
+    "slug": "nextUntil",
     "isWaiting": true,
     "inProgress": false,
     "isDone": false
@@ -156,10 +156,10 @@
   {
     "id": 15,
     "title": ".not()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "schedule",
-    "category": "KITCHEN_SINK",
-    "slug": "spies-stubs-clocks",
+    "category": "COMMANDS",
+    "slug": "not",
     "isWaiting": true,
     "inProgress": false,
     "isDone": false
@@ -167,10 +167,10 @@
   {
     "id": 16,
     "title": ".parent()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "schedule",
-    "category": "KITCHEN_SINK",
-    "slug": "spies-stubs-clocks",
+    "category": "COMMANDS",
+    "slug": "parent",
     "isWaiting": true,
     "inProgress": false,
     "isDone": false
@@ -178,10 +178,10 @@
   {
     "id": 17,
     "title": ".parents()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "schedule",
-    "category": "KITCHEN_SINK",
-    "slug": "spies-stubs-clocks",
+    "category": "COMMANDS",
+    "slug": "parents",
     "isWaiting": true,
     "inProgress": false,
     "isDone": false
@@ -189,9 +189,10 @@
   {
     "id": 18,
     "title": ".parentsUntil()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "schedule",
-    "category": "HOME",
+    "category": "COMMANDS",
+    "slug": "parentsUntil",
     "isWaiting": true,
     "inProgress": false,
     "isDone": false
@@ -199,9 +200,10 @@
   {
     "id": 19,
     "title": ".prev()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "done",
-    "category": "HOME",
+    "category": "COMMANDS",
+    "slug": "prev",
     "isWaiting": true,
     "inProgress": false,
     "isDone": false
@@ -209,9 +211,10 @@
   {
     "id": 20,
     "title": ".prevAll()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "done",
-    "category": "HOME",
+    "category": "COMMANDS",
+    "slug": "prevAll",
     "isWaiting": true,
     "inProgress": false,
     "isDone": false
@@ -219,21 +222,23 @@
   {
     "id": 21,
     "title": ".prevUntil()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "done",
-    "category": "HOME",
-    "isWaiting": true,
-    "inProgress": false,
+    "category": "COMMANDS",
+    "slug": "prevUntil",
+    "isWaiting": false,
+    "inProgress": true,
     "isDone": false
   },
   {
     "id": 22,
     "title": ".siblings()",
-    "content": "Краткое описание примера",
+    "content": "",
     "icon": "done",
-    "category": "HOME",
-    "isWaiting": true,
+    "category": "COMMANDS",
+    "slug": "siblings",
+    "isWaiting": false,
     "inProgress": false,
-    "isDone": false
+    "isDone": true
   }
 ]
