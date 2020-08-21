@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-navigation-drawer app fixed v-model="showMenu">
-      <PageList :examplesPages="examplesPages"></PageList>
+      <p>main nav</p>
     </v-navigation-drawer>
 
     <v-app-bar app fixed dark color="primary">
