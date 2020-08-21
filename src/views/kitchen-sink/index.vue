@@ -1,5 +1,24 @@
 <template>
-  <router-view></router-view>
+  <div>
+    <v-card class="d-flex flex-wrap" color="grey lighten-2" flat tile>
+      <v-card
+        v-for="examplePage in examplesPages"
+        :key="examplePage.id"
+        :to="'/kitchen-sink/' + examplePage.slug"
+        style="width: 200px;"
+        class="pa-2"
+        outlined
+        tile
+      >
+        <v-icon>{{ examplePage.icon }}</v-icon> {{ examplePage.title }}
+      </v-card>
+    </v-card>
+    <v-container class="grey lighten-5">
+      <v-card>
+        <router-view></router-view>
+      </v-card>
+    </v-container>
+  </div>
 </template>
 
 <script lang="ts">
